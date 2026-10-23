@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Scheme Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Government Scheme Finder</h1>
+        <p>Find schemes that may match your eligibility</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Enter Your Details</h2>
+
+            <form id="schemeForm">
+                <label for="age">Age</label>
+                <input type="number" id="age" min="1" max="100"
+                       placeholder="Enter your age" required>
+
+                <label for="income">Annual Family Income (INR)</label>
+                <input type="number" id="income" min="0"
+                       placeholder="Enter annual income" required>
+
+                <label for="student">Are you a student?</label>
+                <select id="student" required>
+                    <option value="">Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="submit">Find Eligible Schemes</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Eligible Schemes</h2>
+            <div id="eligibleResults">
+                Enter your details to find matching schemes.
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Eligibility Gap Explanation</h2>
+            <div id="gapResults">
+                Your unmet eligibility conditions will appear here.
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Application Deadline Reminders</h2>
+            <div id="deadlineResults">
+                Deadline information will appear here.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Government Scheme Finder | Student Mini Project</p>
+        <p>Sample data only. Always verify eligibility and deadlines
+           through official government websites.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
